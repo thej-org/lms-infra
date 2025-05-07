@@ -41,8 +41,7 @@ jobs:
     - name: Terraform Init
       run: |
         terraform init \
-          -backend-config="bucket=${{ secrets.TF_BUCKET }}" \
-          -backend-config="prefix=${{ secrets.TF_PREFIX }}"
+          -backend-config="bucket=${{ secrets.TF_BUCKET }}"
 
 
     - name: Terraform Planning
